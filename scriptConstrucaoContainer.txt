@@ -21,7 +21,7 @@ $ docker container exec -it pyspark-notebook /bin/bash
             (Não necessário - passo se vc criou a sua imagem)
 $ jupyter notebook list
 Currently running servers:
-http://0.0.0.0:8888/?token=c5bcfaa161d28bdd396868599b6f9a16486ca6c1c9013fd3 :: /app
+http://0.0.0.0:8888/?token=0fe22115a9ab181578a3ab69c1a1aead2cb958dc91b65586 :: /app
 Veja o token da máquina
 c5bcfaa161d28bdd396868599b6f9a16486ca6c1c9013fd3
 
