@@ -21,13 +21,13 @@ $ docker container exec -it pyspark-notebook /bin/bash
             (Não necessário - passo se vc criou a sua imagem)
 $ jupyter notebook list
 Currently running servers:
-http://0.0.0.0:8888/?token=7cc50cc531ea51822fca642c8a78e1738d1511aecdc047c7 :: /app
+http://0.0.0.0:8888/?token=250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6 :: /app
 Veja o token da máquina
-7cc50cc531ea51822fca642c8a78e1738d1511aecdc047c7
+250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6
 
 6o. passo - Entrar no browser http://0.0.0.0:8888 e colocar o token da máquina 
             No acesso ao browser colocar este token se estive usando a minha imagem
-7cc50cc531ea51822fca642c8a78e1738d1511aecdc047c7
+250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6
 
 7o. passo - Entrar no container criado (somente se quiser entrar na máquina por curiosidade)
 $ docker container exec -it pyspark-notebook /bin/bash
