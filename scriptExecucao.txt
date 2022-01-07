@@ -9,9 +9,9 @@ Para executar sem precisar construir:
      $ docker container exec pyspark-notebook jupyter notebook list  
 
     Currently running servers:
-    http://0.0.0.0:8888/?token=0fe22115a9ab181578a3ab69c1a1aead2cb958dc91b65586 :: /app
+    http://0.0.0.0:8888/?token=7cc50cc531ea51822fca642c8a78e1738d1511aecdc047c7 :: /app
 
-    verificar o token para a execução no browser: 0fe22115a9ab181578a3ab69c1a1aead2cb958dc91b65586
+    verificar o token para a execução no browser: 7cc50cc531ea51822fca642c8a78e1738d1511aecdc047c7
 
 outros comandos para conhecimento:
      $ docker container exec pyspark-notebook jupyter notebook --NotebookApp.iopub_data_rate_limit=2000000 # comandos de alteração de limite
@@ -26,7 +26,7 @@ outros comandos para conhecimento:
 
 3o. passo: colocar o token para execução na página do browser:
 
-    be8edf687a35ef694f9b2920c6f06f4a12ce6b49dbad532f
+    7cc50cc531ea51822fca642c8a78e1738d1511aecdc047c7
 
 
 4o. passo: abrir o arquivo "Pagamentos.ipynb" para execução.
