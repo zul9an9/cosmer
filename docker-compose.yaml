@@ -1,0 +1,19 @@
+version: '3.8'
+
+networks:
+  cosmer_net:
+    driver: bridge
+
+#Services de banco mongo e postgre
+services:
+  srv-pyspark-notebook:
+    image: zul9an9/pyspark-notebook:v3
+    container_name: pyspark-notebook
+    ports:
+    - 8888:8888
+    networks:
+     - cosmer_net
+
+
+
+

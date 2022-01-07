@@ -1,0 +1,22 @@
+FROM alpine:latest
+
+# Create a group and user
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+
+# Tell docker that all future commands should run as the appuser user
+USER appuser
+As bandeiras para addusersão:
+
+Uso: adduser [OPÇÕES] USUÁRIO [GRUPO]
+
+Crie um novo usuário ou adicione USUÁRIO ao GRUPO
+
+        -h Diretório inicial DIR
+        -g campo GECOS GECOS
+        Shell de login -s SHELL
+        -G Grupo GRP
+        -S Criar um usuário do sistema
+        -D Não atribua uma senha
+        -H Não cria diretório inicial
+        -u ID de usuário UID
+        -k Diretório SKEL Skeleton (/ etc / skel)
