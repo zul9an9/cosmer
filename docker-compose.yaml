@@ -10,11 +10,11 @@ networks:
 #Services de banco mongo e postgre
 services:
   srv-pyspark-notebook:
-    image: zul9an9/pyspark-globo:v1
+    image: zul9an9/pyspark-notebook:v3
     container_name: pyspark-notebook
     ports:
     - 8888:8888
-  networks:
+    networks:
     - meta_net
-   volumes:
-  - meta_vol:/app
+    volumes:
+    - meta_vol:/app
