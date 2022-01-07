@@ -12,7 +12,7 @@ $ docker build -t zul9an9/pyspark-notebook:v1 .
             Isto faz a sua máquina local acessar o container com os browser pela porta 8888
             Substitua seu usuário pelo meu ou execute direto com o meu usuário pq está imagem já esta pronta descartando o passo 2
 
-$ docker container run -d -p 8888:8888 --name pyspark-notebook zul9an9/pyspark-notebook:v1 
+$ docker container run -d -p 8888:8888 --name pyspark-notebook zul9an9/pyspark-notebook:v3 
 
 4o. passo - Entrar no container criado (Não necessário - passo se vc criou a sua imagem)
 $ docker container exec -it pyspark-notebook /bin/bash

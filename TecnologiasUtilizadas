@@ -14,5 +14,7 @@ Possibilidades:
 
     1o. Separar os script e colocá-los em máquinas diferentes.
     2o. O script Pagamentos e PagamentosVendas podem virar scripts python e serem automatizados através do Cron e CronJob.
-
+    3o. Os novos arquivos de pagamentos podem ser colocados na pasta app através do volume da máquina que pode ser apontada 
+       para a própria máquina ou nuvem.
+        
 
