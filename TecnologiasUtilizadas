@@ -8,7 +8,7 @@ Docker usando network e volume que deve ser ter rotinas de backup.
 Para escalar o pyspark com altos volumes de dados altere as configurações 
 como: "spark.sql.shuffle.partitions","spark.driver.memory" e outros.
  
-Pode-se ainda colocar o container em uma nuvem e/ou colocar um volume para persistencia de dados em nuvem ou local. Ver docker-compose-vol.yaml  
+Pode-se ainda colocar o container em uma nuvem e/ou colocar um volume para persistencia de dados em nuvem ou local. 
 
 Possibilidades: 
 

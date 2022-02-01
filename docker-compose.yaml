@@ -1,8 +1,8 @@
 version: '3.8'
 #Volumes fixos
 volumes:
-  meta_vol:
-
+  cosmer_vol:
+  
 networks:
   meta_net:
     driver: bridge
@@ -10,11 +10,11 @@ networks:
 #Services de banco mongo e postgre
 services:
   srv-pyspark-notebook:
-    image: zul9an9/pyspark-notebook:v3
+    image: zul9an9/pyspark-notebook:v4
     container_name: pyspark-notebook
     ports:
     - 8888:8888
     networks:
     - meta_net
     volumes:
-    - meta_vol:/app
+    - cosmer_vol:/app

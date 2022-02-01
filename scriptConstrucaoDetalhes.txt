@@ -1,0 +1,23 @@
+Dockerfile (construção de imagem do pyspark com os scripts dentro e com as permissões para execução e leitura do usuário)
+
+  a imagem zul9an9/pyspark-notebook:v4 e colocar no docker hub
+    Veja que o usuário que faz a execução é o "jovyan"
+	Ele já vem parametrizado da imagem jupyter/pyspark-notebook:ubuntu-20.04
+	Este usuário não tem password e aparentemente nem o root tem.
+	Eu peguei esta imagem e criei meus diretorios no /app para fazer o exercicio de pyspark
+       parquet/clientes - dados de clientes gerados para parquet
+			 parquet/planos - planos do convênio gerados para parquet
+			 parquet/pagamentos - pagamentos gerados para parquet
+			 parquet/pagamentosGerais gerados para parquet
+
+       csv onde as planilhas de carga de plano e pagamentos se encontram
+       csv/processados - onde as planilhas de pagamentos devem se encontrar após serem processadas
+			 
+ 	Leio duas planilhas de excel (pagamentos.csv e planos.csv) e uma uri de clientes e tranformo em Temp Views do pysparq em parquet
+    
+    obs: aqui surgiu a dúvida 1 - como consigo fazer atualização pq não era o usuário root ?
+                                - pergunta ? tenho que fazer em dois estágios
+                                             um para atualizar como root e depois uma imagem para tratar o "jovyan"	?							
+
+# ver arquivo Dockerfile e docker-compose.yaml
+

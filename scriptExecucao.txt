@@ -6,27 +6,32 @@ Para executar sem precisar construir:
 
 2o. passo: obter o token de uso do servidor
 
-     $ docker container exec pyspark-notebook jupyter notebook list  
+     $ docker container exec pyspark-notebook jupyter server list
 
     Currently running servers:
     http://0.0.0.0:8888/?token=250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6 :: /app
 
-    verificar o token para a execução no browser: 250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6
+    verificar o token para a execução no browser (ver figura EntrarNoJupyter_0001.PNG): 250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6
 
 outros comandos para conhecimento:
      $ docker container exec pyspark-notebook jupyter notebook --NotebookApp.iopub_data_rate_limit=2000000 # comandos de alteração de limite
      $ docker container exec pyspark-notebook NotebookApp.rate_limit_window=4.0 # comandos de alteração de limite
+
+     usado para entrar no container
      $ docker container exec -it pyspark-notebook /bin/bash  # entrar na máquina linux pyspark/notebook
 
 
 
 3o. passo: entrar no browser e executar a url:
 
-    localhost:8888
+    localhost:8888 ou <IP do node em nuvem>:8888
 
 3o. passo: colocar o token para execução na página do browser:
 
     250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6
+
+    na tela do browser ou através de um camando no jupyter podemos trocar o token por uma password
+    (veja https://docs.jupyter.org/pt_BR/latest/running.html)
 
 
 4o. passo: abrir o arquivo "Pagamentos.ipynb" para execução.
@@ -37,7 +42,8 @@ outros comandos para conhecimento:
 
          Pode-se executar cada uma das células para verificar a construção do script e executar passo a passo
 
-5o. passo: Encerrar o aplicativo no diretório do docker-compose
+
+5o. passo: Encerrar o aplicativo no diretório do docker-compose qdo quiser terminar o processo
 
     $ docker-compose down
 
