@@ -1,4 +1,0 @@
-
-200000000 transações por dia ....
-200000000 * 30 dias * 100 bytes por registro
-600GB mensais ou 20GB dia

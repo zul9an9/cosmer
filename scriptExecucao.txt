@@ -6,7 +6,11 @@ Para executar sem precisar construir:
 
 2o. passo: obter o token de uso do servidor
 
+<<<<<<< HEAD
      $ docker container exec pyspark-notebook jupyter server list
+=======
+     $   docker container exec pyspark-notebook jupyter server list
+>>>>>>> 2a631a6715bb757046843897123e8bb826593702
 
     Currently running servers:
     http://0.0.0.0:8888/?token=250d5725afab1d55f978217bbdd489c83656e6bebf9e9bf6 :: /app
